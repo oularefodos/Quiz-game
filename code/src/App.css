@@ -1,0 +1,360 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.section {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.sect {
+    width: 100%;
+    height: 80%;
+    background-image: url("../public/img.jpg");
+    margin: auto;
+    text-align: center;
+}
+
+.sect button {
+    margin-top: 400px;
+    background: none;
+    width: 50%;
+    height: 10%;
+    border: 1px solid gray;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 15px 15px 15px 15px;
+    transition: background 0.7s;
+
+}
+
+.sect button:hover {
+    background: white;
+    box-shadow: 15px 15px 15px 15px lightgray;
+    border: none;
+
+}
+
+.toggle {
+    display: none;
+}
+
+.logo h1{
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: indianred;
+}
+
+.level {
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.question {
+    width: 70%;
+    font-size: 50px;
+    border: 5px solid #1B1464;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 20px;
+}
+.option {
+   margin-top: 5rem;
+}
+.option p {
+    height: 50px;
+    font-size: 40px;
+    border: 1px solid indianred;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 15px;
+    padding-left: 1rem;
+}
+
+.option p:hover {
+    background-color: #1B1464;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    background-color: indianred;
+    color: white;
+}
+
+.auth {
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.username {
+    justify-content: center;
+    width: 40%;
+    height: 100px;
+    font-size: 70%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid indianred;
+    border-radius: 1px 25px 1px 25px;
+}
+
+.logOut {
+    background-color: indianred;
+    color: white;
+    width: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+    border: none;
+    height: 40px;
+    border-radius: 5px 5px 5px 5px;
+    transition: background 0.5s;
+}
+
+.logOut:hover {
+    background-color: white;
+    color: indianred;
+    border: 1px solid indianred;
+}
+
+.username span{
+    color: indianred;
+}
+
+.auth label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.auth input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border: none;
+    box-shadow: lightgray 3px 5px 1px 1px;
+}
+
+.auth p {
+    color: indianred;
+    text-decoration: underline;
+}
+
+.auth button {
+    background-color: indianred;
+    width: 50%;
+    margin-top: 4px;
+    height: 40px;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    transition: background-color 0.3s;
+}
+
+.auth button:hover {
+    background-color: aqua;
+    width: 50%;
+    margin-top: 4px;
+    height: 40px;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+}
+
+.succes {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    font-size: 100px;
+    color: seagreen;
+}
+
+.section {
+    top: 0;
+    margin: auto;
+    padding: 2rem;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    box-shadow: lightgray 2px 4px 1px;
+   
+}
+
+.navlink {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: Black;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navlink:hover {
+    text-decoration: none;
+    color: indianred;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    padding-left: 2rem;
+}
+
+.open-menu {
+    display: flex;
+    list-style: none;
+}
+.open-menu li {
+    padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .logOut {
+        width: 100px;
+    }
+
+    .username {
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .option p {
+        font-size: 100%;
+        height: 35px;
+    }
+
+    body {
+        font-size: 100%;
+    }
+    .question {
+        font-size: 100%;
+    }
+
+    .option {
+        font-size: 25px;
+    }
+    .sect button{
+        margin-top: 400px;
+        background: none;
+        width: 80%;
+        height: 10%;
+        border: 1px solid gray;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        box-shadow: 20px 20px 20px ;
+    
+    }
+
+    nav {
+        top: 0px;
+        width: 100%;
+    }
+
+    .toggle {
+        z-index: 1;
+        display: block;
+        font-size: 2rem;
+    }
+
+    .open {
+        display: block;
+        margin: 10px;
+    }
+    .navlink {
+        text-decoration: none;
+        color: black;
+        transition: color 0.5s;
+    }
+
+    .close {
+        display: none;
+    }
+    
+    .menu {
+        background: indianred;
+        position: absolute;
+        height: 100%;
+        top:0px;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        right: 100%;
+        transition: right 0.3s;
+    }
+
+    .open-menu {
+        background: indianred;
+        opacity: 0.7;
+        position: absolute;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        right: 0px;
+        transition: right 0.3s;
+    }
+
+    .open-menu li {
+        width: 100%;
+        padding: 11px;
+        margin-top: 40px;
+        align-items: center;
+        list-style: none;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 11px;
+        margin-top: 40px;
+        align-items: center;
+        list-style: none;
+    }
+
+    .open-menu li:hover {
+        background-color: white;
+    }
+}
+
