@@ -40,7 +40,7 @@ contract Miros {
 
 
    //user structure
-   ```solidity
+   ```
    struct User {
        address addr;
        string username;
