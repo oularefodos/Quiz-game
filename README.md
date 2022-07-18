@@ -1,4 +1,4 @@
-# Quiz-game
+## Quiz-game
 
 Quiz game est une Dapp, cette dapp nous permet de jouer en répondant à des questions. elle utilise solidity (contrats intelligents) comme Back-end, React.js comme front-end et la librairie ethers.js qui nous permet de communiquer avec le contract intelligent.
 
@@ -40,25 +40,15 @@ contract Miros {
 
 
    //user structure
-
-
+   ```solidity
    struct User {
-
-
        address addr;
-
-
        string username;
-
-
        string email;
-
-
        bool islogin;
 
-
    }
-
+```
 
 
 
@@ -329,8 +319,3 @@ users[_addr].islogin = false;
 
 
 }
-
-
-
-
-
