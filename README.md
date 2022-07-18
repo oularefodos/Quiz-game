@@ -20,7 +20,7 @@ contract Miros {
        string email;
        bool islogin;
 
-   }```
+   }
    
    // mapping for users
    mapping (address => User) public users;
@@ -61,7 +61,8 @@ contract Miros {
            users[_addr].islogin = false;
        }
 
-   } ```
+   }
+   }```
 
 
 EXPLICATION DU CONTRAT
@@ -72,21 +73,16 @@ pragma solidity ^0.8.4;
 Vous remarquerez qu’en solidity pour créer une classe on utilise le mot < contract > Puis le nom de votre Contrat ici le nom de mon contrat est < Miros >.
 
 Une classe ressemble à ceci en solidity
-
+```solidity
 contract NomContrat {
 	constructor () {
 }
-}
+} ```
 
 J’ai créé une structure pour enregistrer les informations de l'utilisateur.
 
 
-
-
-
-
-
-
+```solidity
    struct User {
 
 
@@ -102,7 +98,7 @@ J’ai créé une structure pour enregistrer les informations de l'utilisateur.
        bool islogin;
 
 
-   }
+   }```
 
 
 
@@ -115,13 +111,13 @@ Pour comprendre le mapping cliquez sur ce lien: https://www.tutorialspoint.com/s
 
 
 
-
+```solidity
 mapping (address => User) public users;
 
 
 mapping (address => string) private passwrd;
 
-
+```
 
 
 Création de la fonction D’inscription cette fonction a des paramètres suivants:  
@@ -142,7 +138,7 @@ S' il n'était pas déjà enregistré, il va l'enregistrer dans la structure sin
 
 
 
-
+```solidity
 users[_addr].addr = _addr;
 
 
@@ -159,14 +155,14 @@ users[_addr].islogin = false;
 
 
 return (true);
-
+```
 
 
 
 
 La seconde fonction est la fonction de connexion qui est: 
 
-
+```solidity
 function login(address _addr, string memory _passwrd) public returns(bool) {
 
 
@@ -194,13 +190,13 @@ function login(address _addr, string memory _passwrd) public returns(bool) {
 
 
    }
-
+```
 Vous remarquez qu’on a une fonction Keccak256 c’est une fonction de hachage à 256 bits.
 savoir plus sur la fonction abi.encodePacked https://docs.soliditylang.org/en/develop/abi-spec.html;
 
 La dernière fonction est la fonction de Déconnexion
 
-
+```solidity
 function logout(address _addr) public {
 
 
@@ -218,4 +214,4 @@ users[_addr].islogin = false;
 }
 
 
-}
+} ```
