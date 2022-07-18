@@ -79,7 +79,7 @@ contract NomContrat {
 }
 } ```
 
-J’ai créé une structure pour enregistrer les informations de l'utilisateur.
+//J’ai créé une structure pour enregistrer les informations de l'utilisateur.
 
 
 ```solidity
@@ -102,7 +102,7 @@ J’ai créé une structure pour enregistrer les informations de l'utilisateur.
 
 
 
-Puis un mapping pour enregistrer  l’ensemble des USERS et leurs PASSWORDS.
+//Puis un mapping pour enregistrer  l’ensemble des USERS et leurs PASSWORDS.
 Pour comprendre le mapping cliquez sur ce lien: https://www.tutorialspoint.com/solidity/solidity_mappings.htm
 
 
