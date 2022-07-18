@@ -103,7 +103,7 @@ contract NomContrat {
 
 
 //Puis un mapping pour enregistrer  l’ensemble des USERS et leurs PASSWORDS.
-Pour comprendre le mapping cliquez sur ce lien: https://www.tutorialspoint.com/solidity/solidity_mappings.htm
+//Pour comprendre le mapping cliquez sur ce lien: https://www.tutorialspoint.com/solidity/solidity_mappings.htm
 
 
 
